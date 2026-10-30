@@ -16,7 +16,10 @@ class ProductStore {
         res = await fetch('clean_products.json');
       }
       const data = await res.json();
-      this.products = Array.isArray(data) ? data : (data.products || []);
+      this.products = (Array.isArray(data) ? data : (data.products || [])).map(item => {
+        if (item.image && item.image.startsWith('/')) item.image = item.image.substring(1);
+        return item;
+      });
       
       this.categories = ['Todos', ...new Set(this.products.map(p => p.category).filter(Boolean))];
       this.isLoaded = true;

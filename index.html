@@ -172,29 +172,22 @@
     <!-- 5. HERO CAROUSEL (Real Farma Gente Banners with Mascot) -->
     <section class="hero-slider-section">
       <div class="hero-slider-container">
+        <div class="hero-slides-wrapper">
         <!-- Slide 1 -->
         <div class="hero-slide active">
-          <picture>
-            <source srcset="imgs/banners/banner-hero-1.webp" type="image/webp">
-            <img src="imgs/banners/banner-hero-1.png" alt="Tudo o que você precisa para cuidar de quem importa - Farma Gente">
-          </picture>
+          <img src="imgs/banners/banner-hero-1.png" alt="Tudo o que você precisa para cuidar de quem importa - Farma Gente">
         </div>
         <!-- Slide 2 -->
         <div class="hero-slide">
-          <picture>
-            <source srcset="imgs/banners/banner-hero-2.webp" type="image/webp">
-            <img src="imgs/banners/banner-hero-2.png" alt="Sua farmácia na palma da mão - Drogaria Itajaí">
-          </picture>
+          <img src="imgs/banners/banner-hero-2.png" alt="Sua farmácia na palma da mão - Drogaria Itajaí">
         </div>
         <!-- Slide 3 -->
         <div class="hero-slide">
-          <picture>
-            <source srcset="imgs/banners/banner-hero-3.webp" type="image/webp">
-            <img src="imgs/banners/banner-hero-3.png" alt="Da farmácia para sua casa com praticidade - Farma Gente">
-          </picture>
+          <img src="imgs/banners/banner-hero-3.png" alt="Da farmácia para sua casa com praticidade - Farma Gente">
         </div>
 
         <!-- Slider Controls -->
+                </div>
         <button class="slider-btn prev" onclick="window.prevHeroSlide()" aria-label="Slide Anterior">❮</button>
         <button class="slider-btn next" onclick="window.nextHeroSlide()" aria-label="Próximo Slide">❯</button>
 
@@ -291,36 +284,77 @@
     <!-- 8. WIDE STRIP BANNER 1 (1920x268 Farma Gente Banner) -->
     <section class="strip-banner-section">
       <div class="strip-banner-container">
-        <picture>
-          <source srcset="imgs/banners/banner-strip-1.webp" type="image/webp">
-          <img src="imgs/banners/banner-strip-1.png" alt="Tudo o que você precisa para cuidar de quem importa - Farma Gente">
-        </picture>
+        <img src="imgs/banners/banner-strip-1.png" alt="Tudo o que você precisa para cuidar de quem importa - Farma Gente">
       </div>
     </section>
 
-    <!-- 9. VISUAL CATEGORIES: "Cuidados que você merece" (Drogasil Screenshot 3) -->
+        <!-- 9. VISUAL CATEGORIES: "Cuidados que você merece" (Drogasil Reference) -->
     <section class="visual-categories-section">
       <div class="shelf-header">
         <h2 class="shelf-title">Cuidados que você merece</h2>
+        <div class="shelf-controls">
+          <a href="loja.html" style="color:var(--secondary);font-weight:700;font-size:14px;margin-right:8px;">Ver todas as categorias &rarr;</a>
+        </div>
       </div>
       <div class="visual-categories-grid">
         <a href="loja.html?cat=Dermocosméticos" class="visual-category-card">
-          <img src="imgs/categories/cuidados-pele.jpg" alt="Cuidados com a Pele">
+          <div class="visual-category-img-wrap">
+            <img src="imgs/categories/cuidados-pele.jpg" alt="Cuidados com a Pele" loading="lazy">
+          </div>
+          <div class="visual-category-footer">
+            <span class="visual-category-title">Cuidados com a Pele</span>
+            <span class="visual-category-arrow">&rarr;</span>
+          </div>
         </a>
+
         <a href="loja.html?cat=Mamãe & Bebê" class="visual-category-card">
-          <img src="imgs/categories/mamae-bebe.jpg" alt="Mamãe & Bebê">
+          <div class="visual-category-img-wrap">
+            <img src="imgs/categories/mamae-bebe.jpg" alt="Mamãe & Bebê" loading="lazy">
+          </div>
+          <div class="visual-category-footer">
+            <span class="visual-category-title">Mamãe & Bebê</span>
+            <span class="visual-category-arrow">&rarr;</span>
+          </div>
         </a>
+
         <a href="loja.html?cat=Medicamentos" class="visual-category-card">
-          <img src="imgs/categories/cuidados-inverno.jpg" alt="Cuidados no Inverno">
+          <div class="visual-category-img-wrap">
+            <img src="imgs/categories/cuidados-inverno.jpg" alt="Cuidados no Inverno" loading="lazy">
+          </div>
+          <div class="visual-category-footer">
+            <span class="visual-category-title">Cuidados no Inverno</span>
+            <span class="visual-category-arrow">&rarr;</span>
+          </div>
         </a>
+
         <a href="loja.html?cat=Perfumaria" class="visual-category-card">
-          <img src="imgs/categories/perfumes.jpg" alt="Perfumaria">
+          <div class="visual-category-img-wrap">
+            <img src="imgs/categories/perfumes.jpg" alt="Perfumaria" loading="lazy">
+          </div>
+          <div class="visual-category-footer">
+            <span class="visual-category-title">Perfumes</span>
+            <span class="visual-category-arrow">&rarr;</span>
+          </div>
         </a>
+
         <a href="loja.html?cat=Dermocosméticos" class="visual-category-card">
-          <img src="imgs/categories/protecao-solar.jpg" alt="Proteção Solar">
+          <div class="visual-category-img-wrap">
+            <img src="imgs/categories/protecao-solar.jpg" alt="Proteção Solar" loading="lazy">
+          </div>
+          <div class="visual-category-footer">
+            <span class="visual-category-title">Proteção Solar</span>
+            <span class="visual-category-arrow">&rarr;</span>
+          </div>
         </a>
+
         <a href="loja.html?cat=Dermocosméticos" class="visual-category-card">
-          <img src="imgs/categories/produtos-asiaticos.jpg" alt="Produtos Asiáticos e K-Beauty">
+          <div class="visual-category-img-wrap">
+            <img src="imgs/categories/produtos-asiaticos.jpg" alt="Produtos Asiáticos e K-Beauty" loading="lazy">
+          </div>
+          <div class="visual-category-footer">
+            <span class="visual-category-title">Produtos Asiáticos</span>
+            <span class="visual-category-arrow">&rarr;</span>
+          </div>
         </a>
       </div>
     </section>
@@ -365,10 +399,7 @@
     <!-- 13. WIDE STRIP BANNER 2 -->
     <section class="strip-banner-section">
       <div class="strip-banner-container">
-        <picture>
-          <source srcset="imgs/banners/banner-strip-2.webp" type="image/webp">
-          <img src="imgs/banners/banner-strip-2.png" alt="Sua farmácia na palma da mão - Drogaria Itajaí">
-        </picture>
+        <img src="imgs/banners/banner-strip-2.png" alt="Sua farmácia na palma da mão - Drogaria Itajaí">
       </div>
     </section>
 
