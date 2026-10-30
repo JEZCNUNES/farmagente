@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rede Farma Gente | Drogaria Itajaí - Sua Farmácia Online Completa</title>
+  <meta name="description" content="Medicamentos, dermocosméticos, vitaminas, cuidados infantis e linha profissional com entrega rápida em até 1 hora em Itajaí e frete grátis para todo o Brasil.">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- 1. TOP ANNOUNCEMENT BAR (Drogasil Reference) -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <span>🚚 <strong>Frete Grátis</strong> nas compras acima de R$ 149,00</span>
+      <span class="top-bar-badge">⚡ Entrega Expressa</span>
+      <span>Receba em até 1h em Itajaí e Região!</span>
+      <a href="suporte.html" style="margin-left:auto;text-decoration:underline;font-size:12px;">Televendas: (47) 3348-1020</a>
+    </div>
+  </div>
+
+  <!-- 2. MAIN HEADER (Drogasil Reference) -->
+  <header class="header-main">
+    <div class="container">
+      <div class="header-row">
+        <!-- Logo -->
+        <a href="index.html" class="header-logo" id="logoLink">
+          <img src="imgs/logo/logo-farma.png" alt="Rede Farma Gente - Drogaria Itajaí">
+        </a>
+
+        <!-- Search Bar with Live Suggestions -->
+        <div class="header-search">
+          <form id="headerSearchForm" onsubmit="event.preventDefault(); window.handleSearchSubmit();">
+            <div class="search-box">
+              <input 
+                type="text" 
+                id="mainSearchInput" 
+                class="search-input" 
+                placeholder="Buscar por medicamentos, dermocosméticos, marcas..."
+                autocomplete="off"
+                oninput="window.handleSearchInput(this.value)"
+              >
+              <button type="submit" class="search-btn" title="Buscar">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+              </button>
+            </div>
+          </form>
+          <div id="searchDropdown" class="search-results-dropdown"></div>
+        </div>
+
+        <!-- Quick Header Actions -->
+        <div class="header-actions">
+          <button class="action-btn action-btn-prescription" onclick="window.openPrescriptionModal()" id="btnPrescriptionHeader">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="12" y1="18" x2="12" y2="12"></line>
+              <line x1="9" y1="15" x2="15" y2="15"></line>
+            </svg>
+            <span>Enviar Receita</span>
+          </button>
+
+          <a href="conta.html" class="action-btn" id="btnAccountHeader">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            <div>
+              <div style="font-size:11px;color:#64748B;line-height:1;">Boas-vindas!</div>
+              <div style="font-weight:700;">Entrar / Cadastrar</div>
+            </div>
+          </a>
+
+          <a href="rastrear.html" class="action-btn" id="btnTrackHeader">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="1" y="3" width="15" height="13"></rect>
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+              <circle cx="5.5" cy="18.5" r="2.5"></circle>
+              <circle cx="18.5" cy="18.5" r="2.5"></circle>
+            </svg>
+            <span>Meus Pedidos</span>
+          </a>
+
+          <!-- Cart Button Pill (Drogasil Reference) -->
+          <button class="cart-btn-pill" onclick="window.cartEngine.openDrawer()" id="btnOpenCart">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            <span class="cart-btn-price">R$ 0,00</span>
+            <span class="cart-badge">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. SUB NAVIGATION (Drogasil Reference) -->
+    <div class="header-subnav">
+      <div class="container">
+        <div class="subnav-row">
+          <div class="cep-selector" onclick="window.openCepModal()" id="btnCepSelector">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span id="headerCepText">Entregar em: Itajaí - SC</span>
+          </div>
+
+          <div class="subnav-links">
+            <a href="loja.html" class="subnav-link" style="color:var(--secondary);font-weight:800;">☰ Todas as Categorias</a>
+            <a href="loja.html?cat=Medicamentos" class="subnav-link">Medicamentos</a>
+            <a href="loja.html?cat=Dermocosméticos" class="subnav-link">Dermocosméticos</a>
+            <a href="loja.html?cat=Vitaminas" class="subnav-link">Vitaminas</a>
+            <a href="loja.html?cat=Mamãe & Bebê" class="subnav-link">Mamãe & Bebê</a>
+            <a href="loja.html?cat=Linha Profissional" class="subnav-link">Linha Profissional</a>
+            <a href="suporte.html" class="subnav-link">Nossas Lojas</a>
+          </div>
+
+          <a href="loja.html?ofertas=1" class="clube-btn" id="btnClubeFarma">
+            ✨ Clube Farma Gente (Até 70% OFF)
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="container">
+
+    <!-- 4. QUICK ACTION CHIPS & FLASH DEAL (Drogasil Screenshot 1) -->
+    <div class="quick-row">
+      <div class="flash-deal-pill">
+        <span>⚡ Oferta Relâmpago</span>
+        <span class="flash-timer" id="flashTimer">07h 59m 12s</span>
+      </div>
+
+      <a href="loja.html?sort=bestsellers" class="quick-pill active">
+        <span class="quick-pill-icon">🔥</span>
+        <span>Mais Buscados</span>
+      </a>
+      <a href="favoritos.html" class="quick-pill">
+        <span class="quick-pill-icon">❤️</span>
+        <span>Produtos Salvos</span>
+      </a>
+      <a href="loja.html?cat=Medicamentos" class="quick-pill">
+        <span class="quick-pill-icon">💊</span>
+        <span>Medicamentos</span>
+      </a>
+      <a href="loja.html?cat=Dermocosméticos" class="quick-pill">
+        <span class="quick-pill-icon">✨</span>
+        <span>Dermocosméticos</span>
+      </a>
+      <a href="loja.html?cat=Vitaminas" class="quick-pill">
+        <span class="quick-pill-icon">🌱</span>
+        <span>Vitaminas</span>
+      </a>
+      <a href="loja.html?cat=Mamãe & Bebê" class="quick-pill">
+        <span class="quick-pill-icon">🍼</span>
+        <span>Mamãe & Bebê</span>
+      </a>
+      <a href="loja.html?cupom=1" class="quick-pill">
+        <span class="quick-pill-icon">🏷️</span>
+        <span>Cupons Farma</span>
+      </a>
+    </div>
+
+    <!-- 5. HERO CAROUSEL (Real Farma Gente Banners with Mascot) -->
+    <section class="hero-slider-section">
+      <div class="hero-slider-container">
+        <!-- Slide 1 -->
+        <div class="hero-slide active">
+          <picture>
+            <source srcset="imgs/banners/banner-hero-1.webp" type="image/webp">
+            <img src="imgs/banners/banner-hero-1.png" alt="Tudo o que você precisa para cuidar de quem importa - Farma Gente">
+          </picture>
+        </div>
+        <!-- Slide 2 -->
+        <div class="hero-slide">
+          <picture>
+            <source srcset="imgs/banners/banner-hero-2.webp" type="image/webp">
+            <img src="imgs/banners/banner-hero-2.png" alt="Sua farmácia na palma da mão - Drogaria Itajaí">
+          </picture>
+        </div>
+        <!-- Slide 3 -->
+        <div class="hero-slide">
+          <picture>
+            <source srcset="imgs/banners/banner-hero-3.webp" type="image/webp">
+            <img src="imgs/banners/banner-hero-3.png" alt="Da farmácia para sua casa com praticidade - Farma Gente">
+          </picture>
+        </div>
+
+        <!-- Slider Controls -->
+        <button class="slider-btn prev" onclick="window.prevHeroSlide()" aria-label="Slide Anterior">❮</button>
+        <button class="slider-btn next" onclick="window.nextHeroSlide()" aria-label="Próximo Slide">❯</button>
+
+        <div class="slider-dots">
+          <span class="dot active" onclick="window.setHeroSlide(0)"></span>
+          <span class="dot" onclick="window.setHeroSlide(1)"></span>
+          <span class="dot" onclick="window.setHeroSlide(2)"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. VALUE PROPOSITION & BENEFITS BAR (Drogasil Screenshot 1) -->
+    <section class="benefits-section">
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon-wrapper">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <div class="benefit-text">
+            <strong>Entrega em 1h</strong>
+            Receba com agilidade em Itajaí e Região!
+          </div>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon-wrapper">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </div>
+          <div class="benefit-text">
+            <strong>Pontos & Descontos</strong>
+            Ganhe cashback nas compras no Clube.
+          </div>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon-wrapper">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          </div>
+          <div class="benefit-text">
+            <strong>Retire em 30min</strong>
+            Retirada grátis em nossa farmácia física.
+          </div>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon-wrapper">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="19" y1="5" x2="5" y2="19"></line>
+              <circle cx="6.5" cy="6.5" r="2.5"></circle>
+              <circle cx="17.5" cy="17.5" r="2.5"></circle>
+            </svg>
+          </div>
+          <div class="benefit-text">
+            <strong>Até 70% OFF</strong>
+            Descontos especiais em genéricos.
+          </div>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon-wrapper">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            </svg>
+          </div>
+          <div class="benefit-text">
+            <strong>Atenção Farmacêutica</strong>
+            Aferição de pressão e orientação online.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. PRODUCT SHELF 1: "Mais Comprados" (Drogasil Screenshot 2) -->
+    <section class="shelf-section">
+      <div class="shelf-header">
+        <h2 class="shelf-title">Mais Comprados</h2>
+        <div class="shelf-controls">
+          <a href="loja.html" style="color:var(--secondary);font-weight:700;font-size:14px;margin-right:12px;">Ver todos ➔</a>
+        </div>
+      </div>
+      <div id="shelfMaisComprados" class="shelf-grid">
+        <!-- Rendered dynamically -->
+      </div>
+    </section>
+
+    <!-- 8. WIDE STRIP BANNER 1 (1920x268 Farma Gente Banner) -->
+    <section class="strip-banner-section">
+      <div class="strip-banner-container">
+        <picture>
+          <source srcset="imgs/banners/banner-strip-1.webp" type="image/webp">
+          <img src="imgs/banners/banner-strip-1.png" alt="Tudo o que você precisa para cuidar de quem importa - Farma Gente">
+        </picture>
+      </div>
+    </section>
+
+    <!-- 9. VISUAL CATEGORIES: "Cuidados que você merece" (Drogasil Screenshot 3) -->
+    <section class="visual-categories-section">
+      <div class="shelf-header">
+        <h2 class="shelf-title">Cuidados que você merece</h2>
+      </div>
+      <div class="visual-categories-grid">
+        <a href="loja.html?cat=Dermocosméticos" class="visual-category-card">
+          <img src="imgs/categories/cuidados-pele.jpg" alt="Cuidados com a Pele">
+        </a>
+        <a href="loja.html?cat=Mamãe & Bebê" class="visual-category-card">
+          <img src="imgs/categories/mamae-bebe.jpg" alt="Mamãe & Bebê">
+        </a>
+        <a href="loja.html?cat=Medicamentos" class="visual-category-card">
+          <img src="imgs/categories/cuidados-inverno.jpg" alt="Cuidados no Inverno">
+        </a>
+        <a href="loja.html?cat=Perfumaria" class="visual-category-card">
+          <img src="imgs/categories/perfumes.jpg" alt="Perfumaria">
+        </a>
+        <a href="loja.html?cat=Dermocosméticos" class="visual-category-card">
+          <img src="imgs/categories/protecao-solar.jpg" alt="Proteção Solar">
+        </a>
+        <a href="loja.html?cat=Dermocosméticos" class="visual-category-card">
+          <img src="imgs/categories/produtos-asiaticos.jpg" alt="Produtos Asiáticos e K-Beauty">
+        </a>
+      </div>
+    </section>
+
+    <!-- 10. PRODUCT SHELF 2: "Dermocosméticos & Linha Profissional" (Drogasil Screenshot 3) -->
+    <section class="shelf-section">
+      <div class="shelf-header">
+        <h2 class="shelf-title">Conheça produtos da linha profissional</h2>
+        <div class="shelf-controls">
+          <a href="loja.html?cat=Linha Profissional" style="color:var(--secondary);font-weight:700;font-size:14px;margin-right:12px;">Ver todos ➔</a>
+        </div>
+      </div>
+      <div id="shelfProfissional" class="shelf-grid">
+        <!-- Rendered dynamically -->
+      </div>
+    </section>
+
+    <!-- 11. PRESCRIPTION CALLOUT BANNER -->
+    <section class="prescription-callout">
+      <div class="prescription-content">
+        <h3>Precisa de remédio com receita médica? 📋</h3>
+        <p>Envie sua receita pelo site ou WhatsApp. Nossos farmacêuticos conferem a dosagem, separam os medicamentos e entregam rapidinho no seu endereço em Itajaí!</p>
+      </div>
+      <button class="prescription-btn" onclick="window.openPrescriptionModal()">
+        Enviar Receita Agora ➔
+      </button>
+    </section>
+
+    <!-- 12. PRODUCT SHELF 3: "Vitaminas & Imunidade" -->
+    <section class="shelf-section">
+      <div class="shelf-header">
+        <h2 class="shelf-title">Vitaminas & Imunidade para Toda a Família</h2>
+        <div class="shelf-controls">
+          <a href="loja.html?cat=Vitaminas" style="color:var(--secondary);font-weight:700;font-size:14px;margin-right:12px;">Ver todos ➔</a>
+        </div>
+      </div>
+      <div id="shelfVitaminas" class="shelf-grid">
+        <!-- Rendered dynamically -->
+      </div>
+    </section>
+
+    <!-- 13. WIDE STRIP BANNER 2 -->
+    <section class="strip-banner-section">
+      <div class="strip-banner-container">
+        <picture>
+          <source srcset="imgs/banners/banner-strip-2.webp" type="image/webp">
+          <img src="imgs/banners/banner-strip-2.png" alt="Sua farmácia na palma da mão - Drogaria Itajaí">
+        </picture>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 14. FOOTER (Drogasil Reference with Farmacêutico Responsável & CRF) -->
+  <footer class="footer-main">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="imgs/logo/logo-farma.png" alt="Rede Farma Gente" style="height:44px;margin-bottom:14px;">
+          <p style="font-size:13px;line-height:1.6;margin-bottom:16px;">
+            A Rede Farma Gente - Drogaria Itajaí cuida da saúde da sua família há anos com os melhores preços em medicamentos, dermocosméticos, vitaminas e atendimento farmacêutico humanizado.
+          </p>
+          <div style="font-weight:700;color:var(--dark);">
+            📞 Central de Atendimento: (47) 3348-1020<br>
+            📱 WhatsApp Farmacêutico: (47) 99988-7766<br>
+            ⏰ Horário: Segunda a Sábado das 07h30 às 22h00 | Domingos das 08h00 às 20h00
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Institucional</h4>
+          <ul class="footer-links">
+            <li><a href="suporte.html">Sobre a Rede Farma Gente</a></li>
+            <li><a href="suporte.html">Nossas Farmácias em Itajaí</a></li>
+            <li><a href="suporte.html">Trabalhe Conosco</a></li>
+            <li><a href="suporte.html">Política de Privacidade</a></li>
+            <li><a href="suporte.html">Termos e Condições de Uso</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Ajuda & Suporte</h4>
+          <ul class="footer-links">
+            <li><a href="rastrear.html">Como Rastrear Meu Pedido</a></li>
+            <li><a href="suporte.html">Prazos e Formas de Entrega</a></li>
+            <li><a href="suporte.html">Trocas e Devoluções</a></li>
+            <li><a href="javascript:window.openPrescriptionModal()">Como Enviar Receita</a></li>
+            <li><a href="admin.html">Painel Administrativo</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Formas de Pagamento</h4>
+          <div style="font-size:13px;line-height:1.6;margin-bottom:16px;">
+            <strong>PIX Instantâneo:</strong> 5% de desconto extra<br>
+            <strong>Cartão de Crédito:</strong> Em até 6x sem juros<br>
+            <strong>Boleto Bancário</strong>
+          </div>
+          <h4>Segurança & Certificados</h4>
+          <div style="display:flex;gap:10px;align-items:center;font-size:12px;color:#10B981;font-weight:800;">
+            <span>🔒 SSL Blindado 256-bit</span>
+            <span>✓ Site Seguro Google</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Regulatory Notice (CRF / Anvisa) -->
+      <div class="footer-regulatory">
+        <strong>Informações Regulatórias da Farmácia:</strong><br>
+        Razão Social: REDE FARMA GENTE DROGARIA ITAJAÍ LTDA | CNPJ: 14.852.963/0001-44<br>
+        Endereço: Av. Sete de Setembro, 1200 - Centro, Itajaí - SC, CEP: 88301-202<br>
+        Farmacêutica Responsável Técnica: Sol S. Silveira - CRF/SC nº 12.845<br>
+        Autorização de Funcionamento ANVISA (AFE): 1.08451.2 | Licença Sanitária Municipal: 2026/04812<br>
+        <span style="font-size:11px;color:#94A3B8;display:block;margin-top:4px;">
+          Medicamentos sob prescrição médica somente serão dispensados mediante apresentação da receita ou envio pelo canal digital. Medicamentos podem causar efeitos adversos. Consulte sempre um médico ou farmacêutico. Se persistirem os sintomas, o médico deverá ser consultado.
+        </span>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Rede Farma Gente - Drogaria Itajaí. Todos os direitos reservados.</div>
+        <div style="display:flex;gap:16px;">
+          <a href="suporte.html">Privacidade</a>
+          <a href="suporte.html">Termos</a>
+          <a href="suporte.html">Atendimento</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 15. CART DRAWER OVERLAY & PANEL -->
+  <div id="cartDrawerOverlay" class="cart-drawer-overlay" onclick="window.cartEngine.closeDrawer()"></div>
+  <aside id="cartDrawer" class="cart-drawer">
+    <div class="cart-header">
+      <h3>Sua Cesta (<span class="cart-badge">0</span>)</h3>
+      <button class="cart-close-btn" onclick="window.cartEngine.closeDrawer()">✕</button>
+    </div>
+
+    <div class="cart-free-shipping-bar">
+      <div id="shippingProgressMsg">Faltam R$ 149,00 para FRETE GRÁTIS!</div>
+      <div class="progress-track">
+        <div id="shippingProgressFill" class="progress-fill" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <div id="cartItemsList" class="cart-items-list">
+      <!-- Dynamic cart items -->
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-subtotal-row">
+        <span>Subtotal:</span>
+        <span id="cartDrawerSubtotal">R$ 0,00</span>
+      </div>
+      <div class="cart-total-row">
+        <span>Total:</span>
+        <span id="cartDrawerTotal">R$ 0,00</span>
+      </div>
+      <a href="checkout.html" class="cart-checkout-btn" style="display:block;text-align:center;">
+        Finalizar Pedido ➔
+      </a>
+    </div>
+  </aside>
+
+  <!-- 16. PRESCRIPTION MODAL (Envio de Receita Médica) -->
+  <div id="prescriptionModal" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>📋 Enviar Receita Médica</h3>
+        <button onclick="window.closePrescriptionModal()" style="font-size:20px;color:#94A3B8;">✕</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size:13px;color:#64748B;margin-bottom:16px;">
+          Envie a foto ou arquivo digital da sua receita médica. Nossa equipe farmacêutica validará o documento e entrará em contato via WhatsApp com o orçamento e link de pagamento com entrega rápida!
+        </p>
+
+        <form onsubmit="event.preventDefault(); window.submitPrescription();">
+          <div style="margin-bottom:14px;">
+            <label style="display:block;font-size:12px;font-weight:700;margin-bottom:6px;">Nome Completo do Paciente:</label>
+            <input type="text" id="prescName" required placeholder="Ex: Maria dos Santos" style="width:100%;border:1px solid #CBD5E1;border-radius:8px;padding:10px;font-size:14px;">
+          </div>
+
+          <div style="margin-bottom:14px;">
+            <label style="display:block;font-size:12px;font-weight:700;margin-bottom:6px;">WhatsApp para Contato:</label>
+            <input type="tel" id="prescPhone" required placeholder="Ex: (47) 99988-7766" style="width:100%;border:1px solid #CBD5E1;border-radius:8px;padding:10px;font-size:14px;">
+          </div>
+
+          <div style="margin-bottom:16px;">
+            <label style="display:block;font-size:12px;font-weight:700;margin-bottom:6px;">Foto ou Arquivo da Receita (PDF, JPG, PNG):</label>
+            <div style="border:2px dashed #009B9D;border-radius:12px;padding:20px;text-align:center;background:#F0FDFA;cursor:pointer;" onclick="document.getElementById('prescFileInput').click()">
+              <input type="file" id="prescFileInput" style="display:none;" onchange="document.getElementById('fileStatus').textContent = this.files[0]?.name || 'Nenhum arquivo selecionado'">
+              <div style="font-size:24px;margin-bottom:6px;">📄</div>
+              <div style="font-weight:700;color:#009B9D;font-size:14px;">Clique para anexar receita</div>
+              <div id="fileStatus" style="font-size:12px;color:#64748B;margin-top:4px;">Suporta fotos nítidas do celular ou receita digital em PDF</div>
+            </div>
+          </div>
+
+          <button type="submit" style="width:100%;background:var(--secondary);color:#FFF;padding:12px;border-radius:8px;font-weight:800;font-size:15px;">
+            Enviar para o Farmacêutico ➔
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 17. CEP SELECTOR MODAL -->
+  <div id="cepModal" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>📍 Selecione o CEP de Entrega</h3>
+        <button onclick="window.closeCepModal()" style="font-size:20px;color:#94A3B8;">✕</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size:13px;color:#64748B;margin-bottom:16px;">
+          Digite seu CEP para calcularmos a previsão de entrega e disponibilidade de estoque para a sua região:
+        </p>
+        <form onsubmit="event.preventDefault(); window.saveCep();">
+          <input type="text" id="cepModalInput" maxlength="9" placeholder="Ex: 88301-202" style="width:100%;border:1px solid #CBD5E1;border-radius:8px;padding:12px;font-size:16px;margin-bottom:14px;">
+          <button type="submit" style="width:100%;background:var(--primary);color:#FFF;padding:12px;border-radius:8px;font-weight:800;font-size:15px;">
+            Confirmar Localização
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 18. SCRIPTS (Products, Cart, FarmaBot) -->
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/farma-bot.js"></script>
+
+  <script>
+    // --- Hero Carousel Logic ---
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.dot');
+    let sliderTimer = null;
+
+    function showSlide(idx) {
+      slides.forEach((s, i) => s.classList.toggle('active', i === idx));
+      dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+      currentSlide = idx;
+    }
+
+    window.nextHeroSlide = function() {
+      showSlide((currentSlide + 1) % slides.length);
+      resetAutoSlide();
+    };
+
+    window.prevHeroSlide = function() {
+      showSlide((currentSlide - 1 + slides.length) % slides.length);
+      resetAutoSlide();
+    };
+
+    window.setHeroSlide = function(idx) {
+      showSlide(idx);
+      resetAutoSlide();
+    };
+
+    function startAutoSlide() {
+      sliderTimer = setInterval(() => {
+        showSlide((currentSlide + 1) % slides.length);
+      }, 5000);
+    }
+
+    function resetAutoSlide() {
+      clearInterval(sliderTimer);
+      startAutoSlide();
+    }
+    startAutoSlide();
+
+    // --- Countdown Timer ---
+    function updateCountdown() {
+      const now = new Date();
+      const end = new Date();
+      end.setHours(23, 59, 59, 999);
+      const diff = end - now;
+      if (diff > 0) {
+        const h = String(Math.floor(diff / (1000 * 60 * 60))).padStart(2, '0');
+        const m = String(Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+        const s = String(Math.floor((diff % (1000 * 60)) / 1000)).padStart(2, '0');
+        const el = document.getElementById('flashTimer');
+        if (el) el.textContent = `${h}h ${m}m ${s}s`;
+      }
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // --- Product Card HTML Builder ---
+    function renderProductCard(p) {
+      const pixPrice = window.productStore.getPixPrice(p.price);
+      return `
+        <article class="product-card" id="card-${p.id}">
+          ${p.discountPercent > 0 ? `<div class="product-card-discount">-${p.discountPercent}%</div>` : ''}
+          ${p.badge ? `<div class="product-card-badge">${p.badge}</div>` : ''}
+          
+          <a href="produto.html?slug=${p.slug}" class="product-card-img-wrap">
+            <img src="${p.image}" alt="${p.name}" loading="lazy">
+          </a>
+
+          <div class="product-brand">${p.brand || 'Farma Gente'}</div>
+          <a href="produto.html?slug=${p.slug}">
+            <h3 class="product-title">${p.name}</h3>
+          </a>
+
+          <div class="product-rating">
+            ★★★★★ <span>(${p.reviews || 48})</span>
+          </div>
+
+          <div class="product-price-box">
+            <div class="price-details">
+              ${p.oldPrice ? `<div class="price-old">${window.productStore.formatMoney(p.oldPrice)}</div>` : ''}
+              <div class="price-current">${window.productStore.formatMoney(p.price)}</div>
+              <div class="price-pix">no Pix: <strong>${window.productStore.formatMoney(pixPrice)}</strong></div>
+            </div>
+
+            <button 
+              class="btn-add-cart-circle" 
+              title="Adicionar à Cesta"
+              onclick="window.cartEngine.addItem(window.productStore.getById('${p.id}'))"
+            >
+              +
+            </button>
+          </div>
+        </article>
+      `;
+    }
+
+    // --- Search Autocomplete Handler ---
+    window.handleSearchInput = function(val) {
+      const dropdown = document.getElementById('searchDropdown');
+      if (!val || val.trim().length < 2) {
+        dropdown.classList.remove('active');
+        return;
+      }
+      const results = window.productStore.search(val).slice(0, 5);
+      if (results.length === 0) {
+        dropdown.innerHTML = `<div style="padding:12px;color:#94A3B8;font-size:13px;">Nenhum produto encontrado com "${val}".</div>`;
+      } else {
+        dropdown.innerHTML = `
+          <div style="font-size:11px;font-weight:800;color:#94A3B8;text-transform:uppercase;margin-bottom:8px;">Produtos Sugeridos:</div>
+          ${results.map(p => `
+            <a href="produto.html?slug=${p.slug}" style="display:flex;align-items:center;gap:12px;padding:8px;border-radius:8px;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='#F1F5F9'" onmouseout="this.style.background='transparent'">
+              <img src="${p.image}" style="width:36px;height:36px;object-fit:contain;">
+              <div style="flex:1;min-width:0;">
+                <div style="font-size:13px;font-weight:700;color:#0F172A;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${p.name}</div>
+                <div style="font-size:12px;color:#DA1C82;font-weight:800;">${window.productStore.formatMoney(p.price)}</div>
+              </div>
+            </a>
+          `).join('')}
+          <div style="border-top:1px solid #E2E8F0;margin-top:8px;padding-top:8px;text-align:right;">
+            <a href="loja.html?q=${encodeURIComponent(val)}" style="color:#009B9D;font-weight:800;font-size:12px;">Ver todos os resultados ➔</a>
+          </div>
+        `;
+      }
+      dropdown.classList.add('active');
+    };
+
+    window.handleSearchSubmit = function() {
+      const q = document.getElementById('mainSearchInput')?.value;
+      if (q) window.location.href = `loja.html?q=${encodeURIComponent(q)}`;
+    };
+
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.header-search')) {
+        document.getElementById('searchDropdown')?.classList.remove('active');
+      }
+    });
+
+    // --- Modals Logic ---
+    window.openPrescriptionModal = () => document.getElementById('prescriptionModal')?.classList.add('open');
+    window.closePrescriptionModal = () => document.getElementById('prescriptionModal')?.classList.remove('open');
+
+    window.submitPrescription = function() {
+      const name = document.getElementById('prescName')?.value;
+      const phone = document.getElementById('prescPhone')?.value;
+      window.closePrescriptionModal();
+      window.cartEngine.showToast('Receita enviada com sucesso! Redirecionando para o WhatsApp do farmacêutico...');
+      setTimeout(() => {
+        const msg = encodeURIComponent(`Olá Farma Gente! Me chamo ${name} e acabei de anexar minha receita pelo site. Meu telefone é ${phone}.`);
+        window.open(`https://wa.me/5547999887766?text=${msg}`, '_blank');
+      }, 1200);
+    };
+
+    window.openCepModal = () => document.getElementById('cepModal')?.classList.add('open');
+    window.closeCepModal = () => document.getElementById('cepModal')?.classList.remove('open');
+    window.saveCep = function() {
+      const val = document.getElementById('cepModalInput')?.value;
+      if (val) {
+        localStorage.setItem('cm.cep', val);
+        document.getElementById('headerCepText').textContent = `Entregar em: ${val}`;
+        window.closeCepModal();
+        window.cartEngine.showToast(`CEP ${val} salvo com sucesso!`);
+      }
+    };
+
+    // --- Load Catalog & Populate Shelves ---
+    window.addEventListener('DOMContentLoaded', async () => {
+      await window.productStore.init();
+      window.cartEngine.updateUI();
+
+      const savedCep = localStorage.getItem('cm.cep');
+      if (savedCep) {
+        document.getElementById('headerCepText').textContent = `Entregar em: ${savedCep}`;
+      }
+
+      // Shelf 1: Mais Comprados (First 5 products)
+      const s1 = document.getElementById('shelfMaisComprados');
+      if (s1) {
+        s1.innerHTML = window.productStore.getAll().slice(0, 5).map(renderProductCard).join('');
+      }
+
+      // Shelf 2: Linha Profissional & Dermocosméticos
+      const s2 = document.getElementById('shelfProfissional');
+      if (s2) {
+        const prods = window.productStore.getAll().filter(p => p.category === 'Linha Profissional' || p.category === 'Dermocosméticos').slice(0, 5);
+        s2.innerHTML = prods.map(renderProductCard).join('');
+      }
+
+      // Shelf 3: Vitaminas & Saúde
+      const s3 = document.getElementById('shelfVitaminas');
+      if (s3) {
+        const vit = window.productStore.getAll().filter(p => p.category === 'Vitaminas' || p.category === 'Saúde & Aparelhos').slice(0, 5);
+        s3.innerHTML = vit.map(renderProductCard).join('');
+      }
+    });
+  </script>
+</body>
+</html>

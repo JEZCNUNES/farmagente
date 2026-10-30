@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Seguro | Rede Farma Gente - Drogaria Itajaí</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <span>🚚 <strong>Frete Grátis</strong> nas compras acima de R$ 149,00</span>
+      <span class="top-bar-badge">⚡ Entrega Expressa</span>
+      <span>Receba em até 1h em Itajaí e Região!</span>
+      <a href="suporte.html" style="margin-left:auto;text-decoration:underline;font-size:12px;">Televendas: (47) 3348-1020</a>
+    </div>
+  </div>
+
+  <header class="header-main">
+    <div class="container">
+      <div class="header-row">
+        <a href="index.html" class="header-logo">
+          <img src="imgs/logo/logo-farma.png" alt="Rede Farma Gente - Drogaria Itajaí">
+        </a>
+
+        <div class="header-search">
+          <form onsubmit="event.preventDefault(); const q = document.getElementById('innerSearchInput').value; if(q) window.location.href='loja.html?q=' + encodeURIComponent(q);">
+            <div class="search-box">
+              <input type="text" id="innerSearchInput" class="search-input" placeholder="Buscar por medicamentos, dermocosméticos, marcas...">
+              <button type="submit" class="search-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="header-actions">
+          <button class="action-btn action-btn-prescription" onclick="window.openPrescriptionModal()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
+            <span>Enviar Receita</span>
+          </button>
+
+          <a href="rastrear.html" class="action-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+            <span>Rastrear</span>
+          </a>
+
+          <button class="cart-btn-pill" onclick="window.cartEngine.openDrawer()">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+            <span class="cart-btn-price">R$ 0,00</span>
+            <span class="cart-badge">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-subnav">
+      <div class="container">
+        <div class="subnav-row">
+          <div class="subnav-links">
+            <a href="index.html" class="subnav-link">Página Inicial</a>
+            <a href="loja.html" class="subnav-link ">Catálogo Completo</a>
+            <a href="loja.html?cat=Medicamentos" class="subnav-link">Medicamentos</a>
+            <a href="loja.html?cat=Dermocosméticos" class="subnav-link">Dermocosméticos</a>
+            <a href="loja.html?cat=Vitaminas" class="subnav-link">Vitaminas</a>
+            <a href="loja.html?cat=Mamãe & Bebê" class="subnav-link">Mamãe & Bebê</a>
+            <a href="loja.html?cat=Linha Profissional" class="subnav-link">Linha Profissional</a>
+            <a href="suporte.html" class="subnav-link ">Atendimento</a>
+          </div>
+          <a href="loja.html?ofertas=1" class="clube-btn">✨ Clube Farma Gente</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  
+  <div class="container" style="margin-top:30px;margin-bottom:60px;">
+    <h1 style="font-family:var(--font-title);font-size:26px;font-weight:800;color:#0F172A;margin-bottom:24px;">Finalização de Pedido Seguro 🔒</h1>
+
+    <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:30px;align-items:flex-start;">
+      <div>
+        <div style="background:#FFF;border:1px solid #E2E8F0;border-radius:12px;padding:24px;margin-bottom:20px;">
+          <h3 style="font-size:16px;font-weight:800;margin-bottom:16px;color:#0F172A;">1. Dados do Comprador</h3>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;">
+            <input type="text" placeholder="Nome Completo *" required style="border:1px solid #CBD5E1;border-radius:8px;padding:10px;font-size:13px;">
+            <input type="text" placeholder="CPF *" required style="border:1px solid #CBD5E1;border-radius:8px;padding:10px;font-size:13px;">
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+            <input type="email" placeholder="E-mail *" required style="border:1px solid #CBD5E1;border-radius:8px;padding:10px;font-size:13px;">
+            <input type="tel" placeholder="WhatsApp / Telefone *" required style="border:1px solid #CBD5E1;border-radius:8px;padding:10px;font-size:13px;">
+          </div>
+        </div>
+
+        <div style="background:#FFF;border:1px solid #E2E8F0;border-radius:12px;padding:24px;margin-bottom:20px;">
+          <h3 style="font-size:16px;font-weight:800;margin-bottom:16px;color:#0F172A;">2. Endereço de Entrega</h3>
+          <div style="display:grid;grid-template-columns:1fr 2fr;gap:12px;margin-bottom:12px;">
+            <input type="text" id="checkoutCep" placeholder="CEP *" required style="border:1px solid #CBD5E1;border-radius:8px;padding:10px;font-size:13px;">
+            <input type="text" placeholder="Rua / Avenida *" required style="border:1px solid #CBD5E1;border-radius:8px;padding:10px;font-size:13px;">
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;">
+            <input type="text" placeholder="Número *" required style="border:1px solid #CBD5E1;border-radius:8px;padding:10px;font-size:13px;">
+            <input type="text" placeholder="Complemento" style="border:1px solid #CBD5E1;border-radius:8px;padding:10px;font-size:13px;">
+            <input type="text" placeholder="Bairro *" required style="border:1px solid #CBD5E1;border-radius:8px;padding:10px;font-size:13px;">
+          </div>
+        </div>
+
+        <div style="background:#FFF;border:1px solid #E2E8F0;border-radius:12px;padding:24px;">
+          <h3 style="font-size:16px;font-weight:800;margin-bottom:16px;color:#0F172A;">3. Forma de Pagamento (Asaas)</h3>
+          
+          <div style="display:flex;gap:12px;margin-bottom:20px;">
+            <label style="flex:1;border:2px solid var(--secondary);border-radius:8px;padding:14px;cursor:pointer;display:flex;align-items:center;gap:10px;background:#F0FDFA;">
+              <input type="radio" name="paymentMethod" value="PIX" checked onchange="window.selectPayment('PIX')">
+              <div>
+                <strong style="color:var(--secondary);font-size:14px;">PIX Instantâneo</strong>
+                <div style="font-size:11px;color:#059669;font-weight:700;">5% de Desconto Imediato</div>
+              </div>
+            </label>
+
+            <label style="flex:1;border:1px solid #CBD5E1;border-radius:8px;padding:14px;cursor:pointer;display:flex;align-items:center;gap:10px;">
+              <input type="radio" name="paymentMethod" value="CARD" onchange="window.selectPayment('CARD')">
+              <div>
+                <strong style="font-size:14px;">Cartão de Crédito</strong>
+                <div style="font-size:11px;color:#64748B;">Até 6x sem juros</div>
+              </div>
+            </label>
+          </div>
+
+          <div id="pixPaymentBox" style="background:#F8FAFC;border:1px solid #E2E8F0;border-radius:8px;padding:16px;font-size:13px;">
+            <p style="margin-bottom:8px;">⚡ Ao clicar em Concluir Pedido, o QR Code e o código Pix Copia-e-Cola serão gerados imediatamente na tela.</p>
+          </div>
+
+          <div id="cardPaymentBox" style="display:none;display:flex;flex-direction:column;gap:12px;">
+            <input type="text" placeholder="Número do Cartão de Crédito" style="border:1px solid #CBD5E1;border-radius:8px;padding:10px;font-size:13px;">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+              <input type="text" placeholder="Validade (MM/AA)" style="border:1px solid #CBD5E1;border-radius:8px;padding:10px;font-size:13px;">
+              <input type="text" placeholder="CVV" style="border:1px solid #CBD5E1;border-radius:8px;padding:10px;font-size:13px;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="background:#FFF;border:1px solid #E2E8F0;border-radius:12px;padding:24px;">
+        <h3 style="font-size:16px;font-weight:800;margin-bottom:16px;color:#0F172A;">Resumo da Cesta</h3>
+        <div id="checkoutItemsList" style="display:flex;flex-direction:column;gap:12px;margin-bottom:20px;border-bottom:1px solid #E2E8F0;padding-bottom:16px;"></div>
+
+        <div style="display:flex;justify-content:space-between;font-size:14px;color:#64748B;margin-bottom:6px;">
+          <span>Subtotal:</span>
+          <span id="checkoutSubtotal">R$ 0,00</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:14px;color:#059669;margin-bottom:6px;">
+          <span>Desconto PIX (5%):</span>
+          <span id="checkoutDiscount">- R$ 0,00</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:14px;color:#64748B;margin-bottom:16px;">
+          <span>Frete:</span>
+          <span style="color:#059669;font-weight:800;">GRÁTIS</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-family:var(--font-title);font-size:22px;font-weight:900;color:#0F172A;border-top:1px dashed #CBD5E1;padding-top:12px;margin-bottom:20px;">
+          <span>Total a Pagar:</span>
+          <span id="checkoutTotal" style="color:var(--primary);">R$ 0,00</span>
+        </div>
+
+        <button onclick="window.finishOrder()" style="width:100%;background:var(--primary);color:#FFF;padding:16px;border-radius:8px;font-weight:800;font-size:16px;box-shadow:0 4px 14px rgba(218,28,130,0.3);">
+          Concluir Pedido e Pagar ➔
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.selectPayment = function(m) {
+      document.getElementById('pixPaymentBox').style.display = m === 'PIX' ? 'block' : 'none';
+      document.getElementById('cardPaymentBox').style.display = m === 'CARD' ? 'flex' : 'none';
+    };
+
+    window.finishOrder = function() {
+      const total = window.cartEngine.getTotal() * 0.95;
+      alert("🎉 Pedido recebido com sucesso pela Farma Gente! Total: " + window.productStore.formatMoney(total) + ".\nCódigo Pix e confirmação enviados para o WhatsApp.");
+      localStorage.removeItem('cm.cart');
+      window.location.href = 'rastrear.html';
+    };
+
+    window.addEventListener('DOMContentLoaded', async () => {
+      await window.productStore.init();
+      window.cartEngine.updateUI();
+
+      const items = window.cartEngine.items;
+      const subtotal = window.cartEngine.getSubtotal();
+      const pix = subtotal * 0.95;
+
+      const list = document.getElementById('checkoutItemsList');
+      if (list) {
+        list.innerHTML = items.map(it => `
+          <div style="display:flex;justify-content:space-between;font-size:13px;">
+            <span>${it.qty}x ${it.name}</span>
+            <strong>${window.productStore.formatMoney(it.price * it.qty)}</strong>
+          </div>
+        `).join('');
+      }
+
+      document.getElementById('checkoutSubtotal').textContent = window.productStore.formatMoney(subtotal);
+      document.getElementById('checkoutDiscount').textContent = "- " + window.productStore.formatMoney(subtotal * 0.05);
+      document.getElementById('checkoutTotal').textContent = window.productStore.formatMoney(pix);
+    });
+  </script>
+
+  
+  <footer class="footer-main">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="imgs/logo/logo-farma.png" alt="Rede Farma Gente" style="height:44px;margin-bottom:14px;">
+          <p style="font-size:13px;line-height:1.6;margin-bottom:16px;">
+            A Rede Farma Gente - Drogaria Itajaí cuida de quem importa com agilidade, medicamentos 100% originais e preços baixos.
+          </p>
+          <div style="font-weight:700;color:var(--dark);">
+            📞 Central: (47) 3348-1020<br>
+            📱 WhatsApp: (47) 99988-7766
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Institucional</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="loja.html">Catálogo Completo</a></li>
+            <li><a href="suporte.html">Sobre a Farmácia</a></li>
+            <li><a href="suporte.html">Nossas Unidades em Itajaí</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Atendimento</h4>
+          <ul class="footer-links">
+            <li><a href="rastrear.html">Rastreamento de Pedido</a></li>
+            <li><a href="suporte.html">Fale com o Farmacêutico</a></li>
+            <li><a href="admin.html">Painel Administrativo</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Segurança & Pagamentos</h4>
+          <div style="font-size:13px;line-height:1.6;margin-bottom:12px;">
+            Pix com 5% de desconto imediato<br>
+            Cartão de crédito em até 6x sem juros
+          </div>
+          <div style="color:#10B981;font-weight:800;font-size:12px;">
+            🔒 Certificado SSL 256-bit<br>
+            ✓ Farmácia Autorizada Anvisa
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-regulatory">
+        Razão Social: REDE FARMA GENTE DROGARIA ITAJAÍ LTDA | CNPJ: 14.852.963/0001-44<br>
+        Endereço: Av. Sete de Setembro, 1200 - Centro, Itajaí - SC, CEP: 88301-202<br>
+        Farmacêutica Responsável: Sol S. Silveira - CRF/SC nº 12.845 | AFE: 1.08451.2
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Rede Farma Gente - Drogaria Itajaí. Todos os direitos reservados.</div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="cartDrawerOverlay" class="cart-drawer-overlay" onclick="window.cartEngine.closeDrawer()"></div>
+  <aside id="cartDrawer" class="cart-drawer">
+    <div class="cart-header">
+      <h3>Sua Cesta (<span class="cart-badge">0</span>)</h3>
+      <button class="cart-close-btn" onclick="window.cartEngine.closeDrawer()">✕</button>
+    </div>
+    <div class="cart-free-shipping-bar">
+      <div id="shippingProgressMsg">Faltam R$ 149,00 para FRETE GRÁTIS!</div>
+      <div class="progress-track"><div id="shippingProgressFill" class="progress-fill" style="width: 0%;"></div></div>
+    </div>
+    <div id="cartItemsList" class="cart-items-list"></div>
+    <div class="cart-footer">
+      <div class="cart-subtotal-row"><span>Subtotal:</span><span id="cartDrawerSubtotal">R$ 0,00</span></div>
+      <div class="cart-total-row"><span>Total:</span><span id="cartDrawerTotal">R$ 0,00</span></div>
+      <a href="checkout.html" class="cart-checkout-btn" style="display:block;text-align:center;">Finalizar Pedido ➔</a>
+    </div>
+  </aside>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/farma-bot.js"></script>
+
+</body>
+</html>

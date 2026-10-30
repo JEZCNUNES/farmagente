@@ -1,0 +1,589 @@
+[
+  {
+    "id": 1,
+    "sku": "FG-MED-001",
+    "gtin": "7891058017507",
+    "slug": "novalgina-dipirona-1g-20-comprimidos-efervescentes",
+    "name": "Novalgina Dipirona Monoidratada 1g 20 Comprimidos Efervescentes",
+    "category": "Medicamentos",
+    "brand": "Sanofi",
+    "price": 35.27,
+    "oldPrice": 47.0,
+    "discountPercent": 25,
+    "stock": 140,
+    "freteGratis": false,
+    "badge": "Mais Vendido",
+    "rating": 4.9,
+    "reviews": 312,
+    "image": "imgs/products/novalgina-1g-20cp.png",
+    "gallery": [
+      "imgs/products/novalgina-1g-20cp.png"
+    ],
+    "short": "Analgésico e antitérmico com ação rápida a partir de 15 minutos para dores intensas e febre alta.",
+    "description": "Novalgina 1g em comprimidos efervescentes é indicada como analgésico e antitérmico. Possui efeito potente e veloz contra dores de cabeça, dores musculares, cólicas e estados febris em adultos e adolescentes a partir de 15 anos. Dissolução rápida em água com sabor suave e ação rápida comprovada cientificamente.",
+    "specs": {
+      "Princípio Ativo": "Dipirona Monoidratada 1000mg",
+      "Registro MS": "1.8326.0463.001-2",
+      "Apresentação": "Tubo com 20 comprimidos efervescentes",
+      "Indicação": "Dor e febre intensa",
+      "Fabricante": "Sanofi-Aventis Farmacêutica Ltda"
+    }
+  },
+  {
+    "id": 2,
+    "sku": "FG-MED-002",
+    "gtin": "7896026305011",
+    "slug": "buscopan-composto-20-comprimidos-revestidos",
+    "name": "Buscopan Composto Butilbrometo de Escopolamina 20 Comprimidos Revestidos",
+    "category": "Medicamentos",
+    "brand": "Boehringer Ingelheim",
+    "price": 23.49,
+    "oldPrice": 29.49,
+    "discountPercent": 20,
+    "stock": 95,
+    "freteGratis": false,
+    "badge": "Alívio Rápido",
+    "rating": 4.8,
+    "reviews": 185,
+    "image": "imgs/products/buscopan-composto-20cp.png",
+    "gallery": [
+      "imgs/products/buscopan-composto-20cp.png"
+    ],
+    "short": "Ação dupla contra cólicas e dores na região da barriga e abdômen, aliviando espasmos musculares.",
+    "description": "Buscopan Composto combina a ação antiespasmódica do Butilbrometo de Escopolamina com o poder analgésico da Dipirona. Age diretamente onde ocorrem as contrações dolorosas dos órgãos abdominais, aliviando cólicas menstruais, renais, intestinais e gástricas.",
+    "specs": {
+      "Princípio Ativo": "Butilbrometo de Escopolamina 10mg + Dipirona 250mg",
+      "Registro MS": "1.0367.0013.003-8",
+      "Apresentação": "Blíster com 20 comprimidos revestidos",
+      "Indicação": "Cólicas abdominais, intestinais e menstruais",
+      "Fabricante": "Boehringer Ingelheim do Brasil"
+    }
+  },
+  {
+    "id": 3,
+    "sku": "FG-OFT-003",
+    "gtin": "3662042001422",
+    "slug": "colirio-hyabak-solucao-oftalmica-0-15-10ml",
+    "name": "Colírio Hyabak Solução Oftálmica Hidratante 0,15% Frasco 10ml",
+    "category": "Medicamentos",
+    "brand": "Laboratoires Théa",
+    "price": 78.9,
+    "oldPrice": 92.5,
+    "discountPercent": 15,
+    "stock": 60,
+    "freteGratis": true,
+    "badge": "Sem Conservantes",
+    "rating": 4.9,
+    "reviews": 240,
+    "image": "imgs/products/colirio-hyabak-10ml.png",
+    "gallery": [
+      "imgs/products/colirio-hyabak-10ml.png"
+    ],
+    "short": "Lágrima artificial com ácido hialurônico 0,15% e sistema ABAK sem conservantes, ideal para olhos secos.",
+    "description": "Hyabak é uma solução hipotônica recomendada para umidificar e lubrificar os olhos em caso de sensação de secura ou cansaço ocular induzido por fatores externos como tela de computador, ar condicionado e poeira. Pode ser usado com qualquer tipo de lente de contato.",
+    "specs": {
+      "Princípio Ativo": "Hialuronato de Sódio 0,15%",
+      "Registro MS": "8.0169.1000.001-9",
+      "Apresentação": "Frasco multidose sistema ABAK 10ml",
+      "Indicação": "Olho seco e lubrificação ocular",
+      "Fabricante": "Laboratoires Théa"
+    }
+  },
+  {
+    "id": 4,
+    "sku": "FG-MED-004",
+    "gtin": "7896004712039",
+    "slug": "benegrip-multi-paracetamol-descongestionante-20-comprimidos",
+    "name": "Benegrip Multi Paracetamol + Descongestionante 20 Comprimidos",
+    "category": "Medicamentos",
+    "brand": "Hypera Pharma",
+    "price": 28.9,
+    "oldPrice": 36.9,
+    "discountPercent": 22,
+    "stock": 110,
+    "freteGratis": false,
+    "badge": "Gripes & Resfriados",
+    "rating": 4.7,
+    "reviews": 98,
+    "image": "imgs/products/benegrip-multi-20cp.png",
+    "gallery": [
+      "imgs/products/benegrip-multi-20cp.png"
+    ],
+    "short": "Tratamento completo contra sintomas de gripes e resfriados, febre, coriza e congestão nasal.",
+    "description": "Benegrip Multi reúne paracetamol, maleato de clorfeniramina e cloridrato de fenilefrina. Alivia dores no corpo, combate a febre, desentope o nariz e reduz espirros e coriza, permitindo uma recuperação mais confortável.",
+    "specs": {
+      "Princípio Ativo": "Paracetamol 400mg + Fenilefrina 4mg + Clorfeniramina 4mg",
+      "Registro MS": "1.7817.0869.001-7",
+      "Apresentação": "20 comprimidos revestidos",
+      "Indicação": "Gripes, resfriados e congestão nasal",
+      "Fabricante": "Hypera Pharma"
+    }
+  },
+  {
+    "id": 5,
+    "sku": "FG-MED-005",
+    "gtin": "7896523206688",
+    "slug": "cimegripe-antigripal-20-capsulas",
+    "name": "Cimegripe Antigripal Completo 20 Cápsulas",
+    "category": "Medicamentos",
+    "brand": "Cimed",
+    "price": 19.9,
+    "oldPrice": 26.9,
+    "discountPercent": 26,
+    "stock": 180,
+    "freteGratis": false,
+    "badge": "Econômico",
+    "rating": 4.8,
+    "reviews": 210,
+    "image": "imgs/products/cimegripe-20cap.png",
+    "gallery": [
+      "imgs/products/cimegripe-20cap.png"
+    ],
+    "short": "Alívio dos sintomas das gripes e resfriados como dores de cabeça, febre e processos alérgicos.",
+    "description": "Cimegripe em cápsulas atua diminuindo as secreções nasais e aliviando as dores associadas às infecções das vias aéreas superiores, com excelente custo-benefício e fórmula consagrada no Brasil.",
+    "specs": {
+      "Princípio Ativo": "Paracetamol 400mg + Fenilefrina 4mg + Clorfeniramina 4mg",
+      "Registro MS": "1.4381.0057.001-4",
+      "Apresentação": "20 cápsulas",
+      "Indicação": "Sintomas gripais e alérgicos",
+      "Fabricante": "Cimed Indústria de Medicamentos"
+    }
+  },
+  {
+    "id": 6,
+    "sku": "FG-MED-006",
+    "gtin": "7896094910247",
+    "slug": "neosaldina-analgesico-para-enxaqueca-30-drageas",
+    "name": "Neosaldina Analgésico para Dores de Cabeça e Enxaqueca 30 Drágeas",
+    "category": "Medicamentos",
+    "brand": "Takeda / Hypera",
+    "price": 31.9,
+    "oldPrice": 39.9,
+    "discountPercent": 20,
+    "stock": 125,
+    "freteGratis": false,
+    "badge": "Especialista em Dor",
+    "rating": 4.9,
+    "reviews": 430,
+    "image": "imgs/products/neosaldina-30drag.png",
+    "gallery": [
+      "imgs/products/neosaldina-30drag.png"
+    ],
+    "short": "Tradição no alívio de cefaleias tensionais e enxaquecas a partir de 15 minutos após a ingestão.",
+    "description": "Neosaldina é um medicamento com atividade analgésica e antiespasmódica indicado para o alívio das dores de cabeça. Combina dipirona com mucato de isometepteno e cafeína para alívio rápido e eficaz.",
+    "specs": {
+      "Princípio Ativo": "Dipirona 300mg + Mucato de Isometepteno 30mg + Cafeína 30mg",
+      "Registro MS": "1.0639.0231.011-8",
+      "Apresentação": "Frasco com 30 drágeas",
+      "Indicação": "Enxaqueca e dores de cabeça",
+      "Fabricante": "Hypera Pharma"
+    }
+  },
+  {
+    "id": 7,
+    "sku": "FG-MED-007",
+    "gtin": "7891058000455",
+    "slug": "dorflex-analgesico-e-relaxante-muscular-36-comprimidos",
+    "name": "Dorflex Analgésico e Relaxante Muscular 36 Comprimidos",
+    "category": "Medicamentos",
+    "brand": "Sanofi",
+    "price": 27.8,
+    "oldPrice": 34.5,
+    "discountPercent": 19,
+    "stock": 200,
+    "freteGratis": false,
+    "badge": "Mais Procurado",
+    "rating": 4.9,
+    "reviews": 512,
+    "image": "imgs/products/dorflex-36cp.png",
+    "gallery": [
+      "imgs/products/dorflex-36cp.png"
+    ],
+    "short": "Ação rápida contra dores musculares, contraturas, lombalgias e torcicolos.",
+    "description": "Dorflex é indicado no alívio da dor associada a contraturas musculares decorrentes de processos traumáticos ou inflamatórios e em cefaleias tensionais.",
+    "specs": {
+      "Princípio Ativo": "Dipirona 300mg + Citrato de Orfenadrina 35mg + Cafeína 50mg",
+      "Registro MS": "1.8326.0354.001-9",
+      "Apresentação": "Blíster com 36 comprimidos",
+      "Indicação": "Dores musculares e torcicolo",
+      "Fabricante": "Sanofi-Aventis"
+    }
+  },
+  {
+    "id": 8,
+    "sku": "FG-BEB-008",
+    "gtin": "7891025114758",
+    "slug": "formula-infantil-aptanutri-premium-3-danone-800g",
+    "name": "Fórmula Infantil Aptanutri Premium 3 Danone Nutricia Lata 800g",
+    "category": "Mamãe & Bebê",
+    "brand": "Danone Nutrícia",
+    "price": 59.39,
+    "oldPrice": 74.9,
+    "discountPercent": 21,
+    "stock": 85,
+    "freteGratis": true,
+    "badge": "Nutrição Infantil",
+    "rating": 5.0,
+    "reviews": 162,
+    "image": "imgs/products/aptanutri-premium-3-800g.png",
+    "gallery": [
+      "imgs/products/aptanutri-premium-3-800g.png"
+    ],
+    "short": "Fórmula infantil de seguimento para crianças de primeira infância (1 a 3 anos) com Pronutra+",
+    "description": "Aptanutri Premium 3 é desenvolvido com prebióticos exclusivos GOS/FOS, DHA, ARA e 27 vitaminas e minerais essenciais para o crescimento saudável e reforço da imunidade infantil.",
+    "specs": {
+      "Faixa Etária": "Crianças de 1 a 3 anos",
+      "Volume / Peso": "Lata de 800g em pó",
+      "Diferenciais": "DHA, ARA, EPA e Prebióticos GOS/FOS",
+      "Fabricante": "Danone Nutricia do Brasil"
+    }
+  },
+  {
+    "id": 9,
+    "sku": "FG-GLI-009",
+    "gtin": "7896472402131",
+    "slug": "sensor-de-monitoramento-glicose-freestyle-libre-2-plus",
+    "name": "Sensor de Monitoramento Contínuo de Glicose FreeStyle Libre 2 Plus Abbott",
+    "category": "Saúde & Aparelhos",
+    "brand": "Abbott",
+    "price": 329.8,
+    "oldPrice": 379.9,
+    "discountPercent": 13,
+    "stock": 42,
+    "freteGratis": true,
+    "badge": "Cupom LIBRE20",
+    "rating": 4.9,
+    "reviews": 184,
+    "image": "imgs/products/freestyle-libre-2-sensor.png",
+    "gallery": [
+      "imgs/products/freestyle-libre-2-sensor.png"
+    ],
+    "short": "Monitoramento contínuo de glicose em tempo real com alarmes personalizáveis diretamente no smartphone.",
+    "description": "O sensor FreeStyle Libre 2 Plus mede a glicose intersticial dia e noite por até 15 dias consecutivos, sem a necessidade das picadas diárias na ponta do dedo. Transmissão automática via Bluetooth a cada minuto para o celular.",
+    "specs": {
+      "Duração": "Até 15 dias de uso contínuo",
+      "Conectividade": "Bluetooth e NFC com app FreeStyle LibreLink",
+      "Resistência à Água": "IP27 (até 1m por 30 minutos)",
+      "Fabricante": "Abbott Diabetes Care"
+    }
+  },
+  {
+    "id": 10,
+    "sku": "FG-MED-010",
+    "gtin": "7891030018508",
+    "slug": "nicorette-icemint-4mg-goma-mastigavel-30-unidades",
+    "name": "Nicorette Ice Mint 4mg Goma Mastigável Sem Açúcar 30 Unidades",
+    "category": "Medicamentos",
+    "brand": "Kenvue / J&J",
+    "price": 83.44,
+    "oldPrice": 119.2,
+    "discountPercent": 30,
+    "stock": 55,
+    "freteGratis": true,
+    "badge": "Pare de Fumar",
+    "rating": 4.7,
+    "reviews": 79,
+    "image": "imgs/products/nicorette-icemint-4mg.png",
+    "gallery": [
+      "imgs/products/nicorette-icemint-4mg.png"
+    ],
+    "short": "Terapia de reposição de nicotina para auxiliar no controle da fissura e abandono do tabagismo.",
+    "description": "Nicorette 4mg auxilia fumantes que desejam parar de fumar de forma gradual e controlada, minimizando crises de ansiedade e sintomas de abstinência causados pela dependência da nicotina.",
+    "specs": {
+      "Princípio Ativo": "Nicotina Resinada 4mg",
+      "Sabor": "Ice Mint Refrescante",
+      "Apresentação": "Caixa com 30 gomas mastigáveis",
+      "Fabricante": "Johnson & Johnson do Brasil"
+    }
+  },
+  {
+    "id": 11,
+    "sku": "FG-DER-011",
+    "gtin": "7899706173001",
+    "slug": "protetor-solar-facial-anthelios-airlicium-fps-80-la-roche-posay-40g",
+    "name": "Protetor Solar Facial Anthelios Airlicium FPS 80 La Roche-Posay Toque Seco 40g",
+    "category": "Dermocosméticos",
+    "brand": "La Roche-Posay",
+    "price": 89.9,
+    "oldPrice": 119.9,
+    "discountPercent": 25,
+    "stock": 70,
+    "freteGratis": true,
+    "badge": "FPS 80 Antioleosidade",
+    "rating": 4.9,
+    "reviews": 528,
+    "image": "imgs/products/la-roche-anthelios-fps80.png",
+    "gallery": [
+      "imgs/products/la-roche-anthelios-fps80.png"
+    ],
+    "short": "Controle inteligente da oleosidade e brilho por 12 horas com altíssima proteção solar UVB/UVA.",
+    "description": "Desenvolvido especialmente para peles mistas a oleosas brasileiras, Anthelios Airlicium FPS 80 possui micropartículas de sílica que absorvem a oleosidade e umidade da pele instantaneamente sem deixar resíduo branco.",
+    "specs": {
+      "Fator de Proteção": "FPS 80 / PPD 30",
+      "Textura": "Gel-creme toque seco e aveludado",
+      "Volume": "Tubo com 40g",
+      "Fabricante": "L'Oréal Cosméticos Brasil"
+    }
+  },
+  {
+    "id": 12,
+    "sku": "FG-DER-012",
+    "gtin": "7899706168540",
+    "slug": "cerave-locao-hidratante-corporal-e-facial-473ml",
+    "name": "CeraVe Loção Hidratante Corporal e Facial com Ácido Hialurônico 473ml",
+    "category": "Dermocosméticos",
+    "brand": "CeraVe",
+    "price": 94.9,
+    "oldPrice": 124.9,
+    "discountPercent": 24,
+    "stock": 65,
+    "freteGratis": true,
+    "badge": "Nº1 dos Dermatologistas",
+    "rating": 5.0,
+    "reviews": 680,
+    "image": "imgs/products/cerave-locao-hidratante-473ml.png",
+    "gallery": [
+      "imgs/products/cerave-locao-hidratante-473ml.png"
+    ],
+    "short": "Hidrata profundamente e ajuda a restaurar a barreira protetora da pele sem sensação pegajosa.",
+    "description": "Com tecnologia MVE de liberação prolongada, 3 ceramidas essenciais e ácido hialurônico, a Loção CeraVe proporciona hidratação contínua durante 24 horas para peles secas e normais.",
+    "specs": {
+      "Ingredientes Ativos": "3 Ceramidas Essenciais (1, 3 e 6-II) + Ácido Hialurônico",
+      "Fórmula": "Não comedogênica, sem perfume e hipoalergênica",
+      "Volume": "Frasco pump 473ml",
+      "Fabricante": "CeraVe Cosméticos"
+    }
+  },
+  {
+    "id": 13,
+    "sku": "FG-DER-013",
+    "gtin": "7891106914581",
+    "slug": "bepantol-derma-toque-seco-hidratante-multirrestaurador-30g",
+    "name": "Bepantol Derma Toque Seco Hidratante Multirrestaurador Facial 30g",
+    "category": "Dermocosméticos",
+    "brand": "Bayer",
+    "price": 38.9,
+    "oldPrice": 48.9,
+    "discountPercent": 20,
+    "stock": 115,
+    "freteGratis": false,
+    "badge": "Pró-Vitamina B5",
+    "rating": 4.8,
+    "reviews": 195,
+    "image": "imgs/products/bepantol-derma-toque-seco-30g.png",
+    "gallery": [
+      "imgs/products/bepantol-derma-toque-seco-30g.png"
+    ],
+    "short": "Fórmula oil-free com Dexpantenol que acalma, hidrata e regenera áreas ressecadas com toque mate.",
+    "description": "Ideal para aplicar no rosto antes da maquiagem, pós-barba, tatuagens recém cicatrizadas e áreas ressecadas. Não deixa a pele oleosa e promove regeneração celular imediata.",
+    "specs": {
+      "Ativo Principal": "Dexpantenol (Pró-Vitamina B5) puro",
+      "Textura": "Creme toque seco e rápida absorção",
+      "Volume": "Bisnaga 30g",
+      "Fabricante": "Bayer S.A."
+    }
+  },
+  {
+    "id": 14,
+    "sku": "FG-VIT-014",
+    "gtin": "7891106907347",
+    "slug": "redoxon-vitamina-c-1g-30-comprimidos-efervescentes",
+    "name": "Redoxon Vitamina C 1000mg 30 Comprimidos Efervescentes Laranja",
+    "category": "Vitaminas",
+    "brand": "Bayer",
+    "price": 42.9,
+    "oldPrice": 56.9,
+    "discountPercent": 25,
+    "stock": 130,
+    "freteGratis": false,
+    "badge": "Imunidade em Alta",
+    "rating": 4.9,
+    "reviews": 270,
+    "image": "imgs/products/redoxon-vitamina-c-1g-30cp.png",
+    "gallery": [
+      "imgs/products/redoxon-vitamina-c-1g-30cp.png"
+    ],
+    "short": "Suplemento de vitamina C antioxidante que fortalece o sistema imunológico e previne infecções virais.",
+    "description": "Redoxon é líder mundial em vitamina C. Seu consumo diário auxilia na produção de colágeno, na absorção de ferro e no fortalecimento das defesas naturais do organismo.",
+    "specs": {
+      "Dosagem": "Ácido Ascórbico 1000mg por comprimido",
+      "Sabor": "Laranja refrescante",
+      "Apresentação": "Tubo com 30 comprimidos efervescentes",
+      "Fabricante": "Bayer Consumo Brasil"
+    }
+  },
+  {
+    "id": 15,
+    "sku": "FG-VIT-015",
+    "gtin": "7896523201409",
+    "slug": "lavitan-a-z-multivitaminico-60-comprimidos",
+    "name": "Lavitan A-Z Multivitamínico e Multimineral 60 Comprimidos Revestidos",
+    "category": "Vitaminas",
+    "brand": "Cimed",
+    "price": 24.9,
+    "oldPrice": 32.9,
+    "discountPercent": 24,
+    "stock": 190,
+    "freteGratis": false,
+    "badge": "Energia & Vigor",
+    "rating": 4.8,
+    "reviews": 380,
+    "image": "imgs/products/lavitan-a-z-60cp.png",
+    "gallery": [
+      "imgs/products/lavitan-a-z-60cp.png"
+    ],
+    "short": "Complexo vitamínico completo com 13 vitaminas e 8 minerais essenciais para combater o cansaço.",
+    "description": "Lavitan A-Z é indicado para suprir as carências nutricionais do dia a dia, melhorando a disposição física, a concentração e a imunidade.",
+    "specs": {
+      "Composição": "Vitaminas A, B1, B2, B3, B5, B6, B12, C, D, E + Zinco e Ferro",
+      "Posologia": "1 comprimido ao dia",
+      "Apresentação": "Frasco com 60 comprimidos",
+      "Fabricante": "Cimed Saúde"
+    }
+  },
+  {
+    "id": 16,
+    "sku": "FG-CAB-016",
+    "gtin": "3474636975204",
+    "slug": "mascara-loreal-professionnel-absolut-repair-gold-quinoa-500g",
+    "name": "Máscara Capilar L'Oréal Professionnel Serie Expert Absolut Repair Gold Quinoa 500g",
+    "category": "Linha Profissional",
+    "brand": "L'Oréal Professionnel",
+    "price": 219.9,
+    "oldPrice": 259.9,
+    "discountPercent": 15,
+    "stock": 38,
+    "freteGratis": true,
+    "badge": "Linha de Salão",
+    "rating": 4.9,
+    "reviews": 142,
+    "image": "imgs/products/kerastase-absolut-repair-500g.png",
+    "gallery": [
+      "imgs/products/kerastase-absolut-repair-500g.png"
+    ],
+    "short": "Tratamento de reconstrução e reparação instantânea para cabelos danificados e enfraquecidos.",
+    "description": "Enriquecida com Quinoa Dourada e Proteína Hidrolisada de Trigo, repara a fibra capilar instantaneamente em até 77%, deixando os fios 7x mais brilhantes e com toque sedoso.",
+    "specs": {
+      "Indicação": "Cabelos danificados por química ou calor",
+      "Tecnologia": "Gold Quinoa + Protein",
+      "Volume": "Pote 500g profissional",
+      "Fabricante": "L'Oréal Paris Divisão Profissional"
+    }
+  },
+  {
+    "id": 17,
+    "sku": "FG-CAB-017",
+    "gtin": "8432225129846",
+    "slug": "revlon-uniq-one-all-in-one-hair-treatment-150ml",
+    "name": "Leave-in Revlon Professional Uniq One All In One Hair Treatment 150ml",
+    "category": "Linha Profissional",
+    "brand": "Revlon",
+    "price": 84.9,
+    "oldPrice": 109.9,
+    "discountPercent": 23,
+    "stock": 50,
+    "freteGratis": true,
+    "badge": "10 Benefícios Reais",
+    "rating": 4.9,
+    "reviews": 215,
+    "image": "imgs/products/revlon-uniq-one-150ml.png",
+    "gallery": [
+      "imgs/products/revlon-uniq-one-150ml.png"
+    ],
+    "short": "Spray leave-in com 10 benefícios reais: proteção térmica, antifrizz, brilho e reparação de pontas.",
+    "description": "O tratamento capilar sem enxágue mais premiado do mundo. Protege contra raios UVA/UVB e calor do secador, facilita a escovação e desembaraça os fios sem pesar.",
+    "specs": {
+      "Tipo": "Tratamento sem enxágue (Leave-in)",
+      "Fragrância": "Clássica floral sofisticada",
+      "Volume": "Frasco spray 150ml",
+      "Fabricante": "Revlon Professional"
+    }
+  },
+  {
+    "id": 18,
+    "sku": "FG-BEB-018",
+    "gtin": "7500435134606",
+    "slug": "fraldas-pampers-premium-care-bag-m-80-tiras",
+    "name": "Fraldas Pampers Premium Care Tamanho M (6-10kg) Pacote Bag 80 Tiras",
+    "category": "Mamãe & Bebê",
+    "brand": "Pampers",
+    "price": 89.9,
+    "oldPrice": 114.9,
+    "discountPercent": 22,
+    "stock": 75,
+    "freteGratis": true,
+    "badge": "Pele Protegida 12h",
+    "rating": 5.0,
+    "reviews": 420,
+    "image": "imgs/products/pampers-premium-care-m.png",
+    "gallery": [
+      "imgs/products/pampers-premium-care-m.png"
+    ],
+    "short": "A fralda número 1 em suavidade e proteção com canais de ar que mantêm o bebê sequinho por até 12 horas.",
+    "description": "Com loção hipoalergênica que ajuda a prevenir irritações na pele sensível do bebê e laterais ultra elásticas que se adaptam aos movimentos sem machucar.",
+    "specs": {
+      "Tamanho": "M (6 a 10 kg)",
+      "Quantidade": "80 tiras descartáveis",
+      "Absorção": "Até 12 horas dia e noite",
+      "Fabricante": "Procter & Gamble Brasil"
+    }
+  },
+  {
+    "id": 19,
+    "sku": "FG-APA-019",
+    "gtin": "7896472401820",
+    "slug": "aparelho-de-pressao-arterial-digital-de-braco-omron-hem-7122",
+    "name": "Aparelho de Pressão Arterial Digital Automático de Braço Omron HEM-7122",
+    "category": "Saúde & Aparelhos",
+    "brand": "Omron Healthcare",
+    "price": 189.9,
+    "oldPrice": 239.9,
+    "discountPercent": 21,
+    "stock": 35,
+    "freteGratis": true,
+    "badge": "5 Anos de Garantia",
+    "rating": 5.0,
+    "reviews": 310,
+    "image": "imgs/products/omron-aparelho-pressao.png",
+    "gallery": [
+      "imgs/products/omron-aparelho-pressao.png"
+    ],
+    "short": "Monitor clínico automático com sensor de arritmia cardíaca e braçadeira ergonômica universal.",
+    "description": "O Omron HEM-7122 é clinicamente validado pela Sociedade Brasileira de Cardiologia. Detecta batimentos cardíacos irregulares e guia a correta colocação da braçadeira com display digital de fácil leitura.",
+    "specs": {
+      "Tipo": "Automático de Braço (22 a 42cm)",
+      "Memória": "Última medição registrada",
+      "Alimentação": "4 pilhas AA inclusas ou cabo USB",
+      "Fabricante": "Omron Healthcare do Brasil"
+    }
+  },
+  {
+    "id": 20,
+    "sku": "FG-APA-020",
+    "gtin": "7898632140021",
+    "slug": "termometro-clinico-digital-g-tech-ponta-flexivel-bebe-adulto",
+    "name": "Termômetro Clínico Digital G-Tech Ponta Flexível à Prova D'água",
+    "category": "Saúde & Aparelhos",
+    "brand": "G-Tech",
+    "price": 18.9,
+    "oldPrice": 24.9,
+    "discountPercent": 24,
+    "stock": 160,
+    "freteGratis": false,
+    "badge": "Leitura em 10s",
+    "rating": 4.8,
+    "reviews": 154,
+    "image": "imgs/products/termometro-digital-gtech.png",
+    "gallery": [
+      "imgs/products/termometro-digital-gtech.png"
+    ],
+    "short": "Medição rápida e precisa da temperatura corporal com ponta flexível emborrachada e alarme sonoro de febre.",
+    "description": "O termômetro digital G-Tech é 100% resistente à água e possui ponta flexível que oferece maior segurança e conforto para bebês e idosos. Desligamento automático e memória da última leitura.",
+    "specs": {
+      "Tempo de Medição": "Aproximadamente 10 segundos",
+      "Ponta": "Emborrachada flexível antialérgica",
+      "Registro Anvisa": "80275310040",
+      "Fabricante": "Accumed-Glicomed"
+    }
+  }
+]
